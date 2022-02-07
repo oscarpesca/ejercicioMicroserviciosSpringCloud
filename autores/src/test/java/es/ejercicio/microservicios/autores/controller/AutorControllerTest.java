@@ -65,32 +65,7 @@ public class AutorControllerTest {
     }
 
 
-	@Test
-	public void testGetAllAutores() {
 
-		Autor autor1 = Autor.builder().id(1).nombre("Autor 1").build();
-		Autor autor2 = Autor.builder().id(2).nombre("Autor 2").build();
-
-		List<Autor> listAutores = new ArrayList<Autor>();
-		listAutores.add(autor1);
-		listAutores.add(autor2);
-
-
-		when(autorRepository.findAll()).thenReturn(listAutores);
-		when(autorService.findAll()).thenReturn(listAutores);
-		try {
-			ResultActions res = this.mockMvc.perform(get("/autores/getAll"))
-									.andDo(print())
-						        	.andExpect(status().isOk())
-						        	.andExpect(jsonPath("$", not(empty())))
-						        	.andExpect(jsonPath("$.[0].id", is(1) ));
-		} catch (JsonProcessingException e1) {
-			fail(e1.getMessage());
-		} catch (Exception e) {
-			fail(e.getMessage());
-		}
-
-	}
 
 
 	@Test
