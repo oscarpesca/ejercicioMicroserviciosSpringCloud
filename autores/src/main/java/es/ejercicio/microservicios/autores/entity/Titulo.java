@@ -17,7 +17,7 @@ import lombok.NoArgsConstructor;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class Autor {
+public class Titulo {
 
     /**
      * Id.
@@ -28,11 +28,9 @@ public class Autor {
     /**
      * Nombre del autor.
      */
-    private String Primernombre;
+    private String titulo;
 
-    private String segundoNombre;
 
-    private String apellido;
 
 
 
