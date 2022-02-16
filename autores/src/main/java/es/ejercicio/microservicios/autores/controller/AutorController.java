@@ -64,7 +64,7 @@ public class AutorController {
      * @return Listado de autores
      * @throws SQLException
      */
-    @RequestMapping(value = "/getAll", method = RequestMethod.GET)
+    @RequestMapping(value = "/getAlls", method = RequestMethod.GET)
     @ApiOperation(value = "Retorna todos los autores",
     			  notes = "Retorna todos los autores almacenados en base de datos",
     			  response = AutorDTO.class,
