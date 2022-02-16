@@ -138,7 +138,7 @@ public class AutorController {
      * @throws SQLException
      */
     @RequestMapping(value = "/deleteAutor/{id}", method = RequestMethod.DELETE)
-    @ApiOperation(value = "Elimina un Autor",
+    @ApiOperation(value = "Elimina un Autor seleccionado",
     			notes = "Elimina el Autor del id especificado",
     		  response = HttpStatus.class)
     public HttpStatus deleteAutor(@ApiParam(name = "id", value = "Id del Autor a eliminar", required = true)@PathVariable("id") String id) throws SQLException {

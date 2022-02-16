@@ -43,7 +43,7 @@ public class AutorServiceImpl implements AutorService {
 
 	@Override
 	public Autor nuevoAutor(Autor autor) {
-		log.debug("Se añade el autor:" + autor);
+		log.debug("Se añade el autor nuevo:" + autor);
 		return autorRepository.save(autor);
 	}
 
