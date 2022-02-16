@@ -30,7 +30,7 @@ public class Autor {
      */
     private String Primernombre;
 
-    private String segundoNombre;
+
 
     private String apellido;
 

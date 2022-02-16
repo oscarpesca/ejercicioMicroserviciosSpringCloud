@@ -30,6 +30,8 @@ public class Titulo {
      */
     private String titulo;
 
+    private String descripcion;
+
 
 
 
